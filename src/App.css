@@ -1,0 +1,155 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+header {
+  font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f9f4da;
+  margin-bottom: 0;
+}
+
+p {
+  color: #bebebe;
+}
+
+header p {
+  margin-top: 10px;
+  max-width: 350px;
+  font-size: 0.875rem;
+  justify-self: center;
+}
+.status-container {
+  width: 400px;
+  padding: 5px;
+  border-radius: 7px;
+  margin: 0 auto 20px;
+}
+
+.status-message-container {
+  margin: auto;
+}
+
+.status-message-container h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #f9f4da;
+}
+
+.status-message-container p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.languages-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin: 30px auto;
+  max-width: 400px;
+}
+
+.language-badge {
+  padding: 4.5px 10px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.language-badge.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.letters-container {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid white; */
+}
+
+.letter-box {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  padding-top: 5px;
+  background-color: rgb(56, 56, 56);
+  border-bottom: 1px solid rgb(169, 168, 168);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+.letter-box.missed-letter {
+  color: rgb(204, 77, 77);
+}
+
+.keyboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 450px;
+  gap: 8px;
+  margin: 40px auto;
+  justify-content: center;
+}
+
+.letter-btn {
+  height: 35px;
+  width: 35px;
+  text-align: center;
+}
+
+.letter-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.sr-only {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: none;
+  top: -1;
+  left: -1;
+}
+
+.newGame-btn {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: rgb(0, 195, 255);
+  padding: 10px 70px;
+}

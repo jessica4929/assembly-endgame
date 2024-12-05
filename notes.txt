@@ -1,0 +1,19 @@
+What are the main containers:
+-Instructions
+-Game status space
+-List of languages
+-Word letter blanks
+-keyboard
+-New Game button
+
+What values saved to state?
+-alphabet as array of objects (letter:string, guessed:bool)
+-Word as array of objects (letter:string, guessed:bool)
+-languages as array of objects (lang:string, gone:bool)
+
+What values derived from state?
+-game won
+
+How will user interact? What events to handle?
+-keystrokes/onClick
+-new game button
